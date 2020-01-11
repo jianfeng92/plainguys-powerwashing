@@ -50,7 +50,10 @@ const About = () => (
             <div>
               <h2>Speed past the competition</h2>
               <p>
-                Power Washing By Chindian. Best in Petaling Jaya
+                Gatsby.js builds the fastest possible website. Instead of
+                waiting to generate pages when requested, pre-build pages and
+                lift them into a global cloud of servers — ready to be delivered
+                instantly to your users wherever they are.
               </p>
             </div>
             <Art>

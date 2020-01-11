@@ -31,11 +31,9 @@ const Header = () => (
             </Art>
             <Text>
               <h1>
-                Fast in
+                Power Washing
                 <br />
-                every way
-                <br />
-                that matters
+                Makes Simple
               </h1>
               <br />
               <p>
