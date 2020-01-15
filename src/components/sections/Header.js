@@ -33,13 +33,14 @@ const Header = () => (
               <h1>
                 Power Washing
                 <br />
-                Makes Simple
               </h1>
               <br />
+              <h2>By The Plain Guys</h2>
+              <h3>
+                Exceptional Service
+              </h3>
               <p>
-                <StyledExternalLink href="https://github.com/ajayns/gatsby-absurd">
-                  Check out source &nbsp;&#x2794;
-                </StyledExternalLink>
+                Our talented team works hard everyday to provide the best services for our clients. We customize our offerings based on specific needs, so get in touch today to receive an initial quote.
               </p>
             </Text>
           </Grid>

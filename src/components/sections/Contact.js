@@ -9,34 +9,34 @@ const About = () => (
   <StaticQuery
     query={graphql`
       query {
-        powerwash001: file(
+        art_fast: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "powerwash001" }
+          name: { eq: "fast" }
         ) {
           childImageSharp {
-            fluid(maxWidth: 1000) {
+            fluid(maxWidth: 760) {
               ...GatsbyImageSharpFluid_withWebp_tracedSVG
             }
           }
         }
 
-        powerwash002: file(
+        art_learn: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "powerwash002" }
+          name: { eq: "learn_yourself" }
         ) {
           childImageSharp {
-            fluid(maxWidth: 1000) {
+            fluid(maxWidth: 760) {
               ...GatsbyImageSharpFluid_withWebp_tracedSVG
             }
           }
         }
 
-        powerwash003: file(
+        art_ideas: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "powerwash003" }
+          name: { eq: "ideas" }
         ) {
           childImageSharp {
-            fluid(maxWidth: 1000) {
+            fluid(maxWidth: 760) {
               ...GatsbyImageSharpFluid_withWebp_tracedSVG
             }
           }
@@ -44,42 +44,10 @@ const About = () => (
       }
     `}
     render={data => (
-      <Section id="about">
+      <Section id="contact">
         <Container>
           <Grid>
-            <div>
-              <h2>About Us</h2>
-              <p>
-              Fast, efficient, and honest, ThePlainGuys Power Wash has become a reputable and well-known Residential and Commercial Cleaning Service.
-              <br />
-              
-              <br />
-              
-              </p>
-            </div>
-            <Art>
-              <Img fluid={data.powerwash001.childImageSharp.fluid} />
-            </Art>
-          </Grid>
-          <Grid inverse>
-            <Art>
-              <Img fluid={data.powerwash002.childImageSharp.fluid} />
-            </Art>
-            <div>
-              <p>
-                Our team is up for every job, managing projects with the skill and experience our clients have come to expect.
-              </p>
-            </div>
-          </Grid>
-          <Grid>
-            <div>
-              <p>
-                We want our customers to be satisfied with our work, which is why we provide open communication channels throughout the duration of each project.
-              </p>
-            </div>
-            <Art>
-              <Img fluid={data.powerwash003.childImageSharp.fluid} />
-            </Art>
+            <h1>Contact Us</h1>
           </Grid>
         </Container>
       </Section>
@@ -91,7 +59,7 @@ const Grid = styled.div`
   display: grid;
   grid-template-columns: 3fr 2fr;
   grid-gap: 40px;
-  text-align: left;
+  text-align: right;
   align-items: center;
   justify-items: center;
   margin: 24px 0;
@@ -128,9 +96,8 @@ const Grid = styled.div`
 
 const Art = styled.figure`
   margin: 0;
-  max-width: 1000px;
+  max-width: 380px;
   width: 100%;
-  height: 100%;
 `;
 
 export default About;
